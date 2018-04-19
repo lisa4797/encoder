@@ -1,0 +1,11 @@
+<body style="background-color:#1e90ff;">
+<% if encode_decode.downcase == "encode" %>
+	<%	result = encode(word,key) %>
+	Your word encoded is <%= result %>
+<% elsif encode_decode.downcase == "decode" %>
+	<% result = decode(word,key) %>
+	Your word decoded is <%= result %>
+<% else %>
+	You did not enter the word encode or decode!!
+<% end %>
+</body>
